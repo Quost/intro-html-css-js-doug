@@ -1,11 +1,15 @@
 .div-com-bordas{
-
+    border: solid 1px black;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 .fundo-azul{
-
+    background-color: blue;
 }
-
+.fundo-vermelho{
+    background-color: red; /* Para cor do fundo */
+    color: white; /* Para cor da palavra */
+}
 #douglas{
     
 }
