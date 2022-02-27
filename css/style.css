@@ -1,15 +1,9 @@
-.div-com-bordas{
-    border: solid 1px black;
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+h1 {
+    background-color: black;
+    color: azure;
 }
 
-.fundo-azul{
-    background-color: blue;
-}
-.fundo-vermelho{
-    background-color: red; /* Para cor do fundo */
-    color: white; /* Para cor da palavra */
-}
-#douglas{
-    
+h4 {
+    font-family: sans-serif;
+    background-attachment: fixed;
 }

@@ -1,0 +1,72 @@
+Css
+
+(.) para relacionar com Classe;
+( # ) id;
+( * ) Tudo no documento vai seguir o que for colocado;
+
+	Classe pode servir para mais de um elemento
+	id é único para somente 1 elemento
+
+Atividades Matheus
+
+1)Escreva os algoritmos abaixo:
+
+a) Que imprima todos os números multiplos de 5, no intervalo fehado de 1 à 500:
+R= 
+	var i = 0
+	let multiplosDe5 = 0
+	let multiplicador = 5
+	for(i = 0; i < 500; i++){
+	   if(i % 5 === 0) {
+		multiplosDe5++ * multiplicador
+	  }
+	  console.log(multiplosDe5 * Multiplicador)
+	}
+	
+
+b) Que imprima os 100 primeiros números ímpares:
+R= 	Douglas
+	for(var i = 1; i < 200; i = i + 2)
+	console.log(i)
+
+
+	Matheus
+	let contadorDeNumerosImpares = 0
+	let contador = 0
+	while(contadorDeNumerosImpares < 100) {
+	     if(contador % 2 != 0) {
+		contadorDeNumerosImpares++
+		console.log(contador + '\n')
+	     }
+	     contador++
+	}
+
+c) Que imprima o quadrado dos números no intervalo fechado de 1 à 20:
+R= 
+	var i = 0
+	let quadradoDosNumeros = 0
+	for(i = 1; i <= 20; i++){
+  	   if(i * i)
+        quadradoDosNumeros++ * i
+  console.log(quadradoDosNumeros * quadradoDosNumeros)
+}
+
+d) Que imprima todos os números de 1 à 100, inclusive, a soma de todos eles:
+R=
+	var i = 1
+	var int = 0
+	let soma = int
+	for(i = 1; i <= 100; i++){
+  	    if(i <= 100){
+    	     int = int + 1
+    	     console.log(i)
+    	     soma = soma + i
+    	  }
+  	}
+  console.log('A soma dos números do intervalo de 1 à 100 é:', soma)
+
+
+2)Usando html e javascript
+
+a) Desenvolva um formulário onde o usuário pode informar um número e escolher se ele quer mostrar metade digitando em um input
+ou o dobro a partir disso, mostre em uma label o resultado esperado:
