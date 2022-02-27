@@ -1,9 +1,12 @@
 h1 {
-    background-color: black;
     color: azure;
 }
 
 h4 {
     font-family: sans-serif;
     background-attachment: fixed;
+}
+
+body {
+    background-color: blue;
 }
