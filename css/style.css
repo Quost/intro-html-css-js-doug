@@ -1,12 +1,14 @@
 h1 {
     color: azure;
+    background-attachment: fixed;
+    font-size: 40px;
 }
 
-h4 {
-    font-family: sans-serif;
-    background-attachment: fixed;
+h3 {
+
 }
 
 body {
     background-color: blue;
 }
+

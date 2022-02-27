@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="texte/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <header>
-        <div>
+        <div class="container">
             <h1>Douglas Williams Werner</h1>
             <h4>Formulário</h4>
             <h3>Complete o cadastro e escolha se queres o dobro ou metade de um número.</h3>
@@ -17,19 +18,22 @@
     </header>
 
     <main>
-        <section>
-            <input placeholder="Nome">
-            <input placeholder="Idade">
-            <input placeholder="e-mail">
-            <input placeholder="Número">
-            <button type="button">
-                Dobro
-            </button>
-            <button type="button">
-                Metade
-            </button>
+        <section class="secaoFormulario">
+            <div class="formulario">
+                <input placeholder="Nome" />
+                <input placeholder="Idade" />
+                <input placeholder="e-mail" />
+                <input placeholder="Número" />
+                <button>Adicionar</button>
+                <button>Dobro</button>
+                <button>Metade</button>
+                <label for="resultado">Resultado</label>
+            </div>
+        <section class="secaoListaresultados">
+            <ul class="list">
+
+            </ul>
         </section>
-        
     </main>  
           
 </body> 
