@@ -1,14 +1,64 @@
-h1 {
-    color: azure;
-    background-attachment: fixed;
-    font-size: 40px;
-}
-
-h3 {
-
-}
-
 body {
-    background-color: blue;
+    background-color: rgba(0, 255, 242, 0.986);
+    font-family: 'Montserrat', sans-serif;
 }
+
+header h1 {
+    color: black;
+    width: 100%;
+}
+
+.secaoFormulario {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+.secaoFormulario input {
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.adicionar {
+        box-sizing: border-box;
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        background-color: transparent;
+        border: 2px solid #1403fc;
+        border-radius: 5px;
+        color: #1403fc;
+        cursor: pointer;
+        font-size: 10px;
+        margin: 20px 200px 0 0;
+        padding: 10px 10px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+      .adicionar:hover, .adicionar:focus {
+        color: black;
+      }
+      .Dobro {
+        border-color: blue;
+        color: #fff;
+        box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+      }
+      .Dobro:hover {
+        box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+      }
+
+      .Metade {
+        border-color: red;
+        color: #fff;
+        box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+      }
+
+      .Metade:hover {
+          box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+      }
 
