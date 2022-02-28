@@ -21,10 +21,7 @@ header h1 {
 
 .adicionar {
         box-sizing: border-box;
-        -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
-        background-color: transparent;
+        background-color: white;
         border: 2px solid #1403fc;
         border-radius: 5px;
         color: #1403fc;
@@ -34,7 +31,6 @@ header h1 {
         padding: 10px 10px;
         text-align: center;
         text-transform: uppercase;
-        font-weight: 700;
       }
       .adicionar:hover, .adicionar:focus {
         color: black;
