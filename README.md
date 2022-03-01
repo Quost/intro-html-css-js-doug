@@ -39,5 +39,65 @@ In CSS
         </section>
     </main>         
 
+
+    .adicionar {
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid #1403fc;
+  border-radius: 5px;
+  color: #1403fc;
+  cursor: pointer;
+  font-size: 10px;
+  margin: 20px 200px 0 0;
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.adicionar:hover, .adicionar:focus {
+  color: black;
+}
+.Dobro {
+  border-color: blue;
+  color: #fff;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  margin: 20px 10px 0 auto;
+}
+.Dobro:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+.Metade {
+  border-color: red;
+  color: #fff;
+  box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  margin: 20px 10px 0 auto;
+}
+
+.Metade:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+.secaoFormulario {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+}
+
+.secaoFormulario div {
+  display: flex;
+}
+
+.secaoFormulario input {
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  margin: 5px 10px 0 auto;
+  
+}
+
     -->
 
