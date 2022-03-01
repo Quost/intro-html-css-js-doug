@@ -105,6 +105,32 @@ main section {
   border-radius: 10px;
   margin-bottom: 30px;
 }
+
+.secaoListaContatos__lista li button{
+  float: right;
+  background-image: url(../img/lixeira.png);
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid #1403fc;
+  color: #1403fc;
+  font-size: 20px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  background-size: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-color: rgba(0, 32, 173, 0.562);
+  cursor: pointer;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.secaoListaContatos__lista li button:hover {
+  box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
 .secaoListaContatos__lista li h2{
   font-size: 18px;
   font-weight: 600;
