@@ -70,3 +70,101 @@ R=
 
 a) Desenvolva um formulário onde o usuário pode informar um número e escolher se ele quer mostrar metade digitando em um input
 ou o dobro a partir disso, mostre em uma label o resultado esperado:
+
+
+const nomes = ["maria", "Manu", "hudson", "victor", "Yasmin", "Felipe"];   --> Array
+
+Para adicionar um nome no array usa-se o método push:
+
+nomes.push("Wallace");
+nomes.push("Gabriel");
+nomes.push("Fernanda");
+nomes.push("Renata");
+
+console.log(nomes); --> vai aparecer junto os nomes que foram adicionados.
+
+console.log(nomes[2]); --> Vai printar o nome que esteja com o índice (chave numerica) de número 2 (sempre começa do 0, sendo assim quem vai ser printado é o hudson)
+
+Em inspecionar vai printar os nomes e o (length) que é a  propriedade do array, mostra a quantidade de objetos dentro do array.
+
+Para adicionar alguns detalhes na lista:
+
+Usa-se o objeto literal
+
+const nomes = ["maria", "Manu", "hudson", "victor", "Yasmin", "Felipe"];
+
+console.log(nomes);
+
+const manu = {
+    nome: "Manu",
+    idade: "20",
+    cidade: "curitiba"
+};
+console.log(manu);
+
+const maria = {
+    nome: "Maria",
+    idade: "21",
+    cidade: "Presidente Prudente"
+}
+console.log(maria);
+
+const pessoas = [];
+
+pessoas.push(manu, maria);
+
+console.log(pessoas.maria);
+
+//Estrutura de condicional/Comparações
+
+
+//Estrutura de condicional/Comparações
+
+//Sintaxe
+
+const estouComSono = false
+
+if (estouComSono === true){
+    console.log("Vou Dormir")
+}
+
+else {
+    console.log("Vou estudar")
+}
+
+//Condição de número
+
+const manu = {
+    nome: "Manu",
+    idade: 18,
+    cidade: "curitiba"
+};
+const maria = {
+    nome: "Maria",
+    idade: 21,
+    cidade: "Presidente Prudente"
+}
+
+if (manu.idade >= 18){
+    console.log("Parabéns");
+}
+else {
+    console.log("Precisa crescer mais");
+}
+
+const dobro = document.getElementById('adicionarDobro');
+console.log(dobro);
+
+const metade = document.getElementById('adicionarMetade');
+console.log(metade);
+
+// Eventos
+function clickNoBotao(evento) {
+    console.log(evento)
+}
+
+dobro.addEventListener('click', clickNoBotao);
+
+metade.addEventListener('click', clickNoBotao);
+
+
