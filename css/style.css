@@ -1,4 +1,98 @@
+body {}
 
+header{
+  background-color: black;
+  color: aqua;
+  padding: 30px 0;
+}
+header .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 250px;
+}
+header h1 {
+  color: aqua;
+  font-size: 40px;
+  margin: 5px 0 0 0;
+}
+header h2 {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+main {
+  display: flex;
+  height: 100vh;
+}
+
+main section {
+  width: 50%;
+  padding: 10px 10px;
+  
+}
+.secaoFormulario {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.secaoFormulario input {
+  width: 500px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px 5px auto;
+}
+
+.button {
+  margin: 0 120px 5px auto;
+}
+
+.adicionar {
+  box-sizing: border-box;
+  background-color: white;
+  border: 2px solid #1403fc;
+  border-radius: 5px;
+  color: #1403fc;
+  cursor: pointer;
+  font-size: 10px;
+  margin: 0 5px 5px auto;
+  padding: 10px 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.adicionar:hover, .adicionar:focus {
+  color: black;
+}
+
+.Dobro {
+  border-color: blue;
+  color: #fff;
+  box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  margin: 10px 10px 0 auto;
+}
+
+.Dobro:hover {
+    box-shadow: 0 0 10px 0 blue inset, 0 0 10px 4px blue;
+}
+
+.Metade {
+  border-color: red;
+  color: #fff;
+  box-shadow: 0 0 40px 40px red inset, 0 0 0 0 red;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  margin: 10px 10px 0 auto;
+}
+
+.Metade:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+.secaoListaRespostas {}
+.secãoListarespostas_lista {}
 
 
 
