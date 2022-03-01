@@ -10,6 +10,8 @@
 
 const listaSolicitações = [];
 
+const listaResultadosContainer = document.querySelector('.secaoListaContatos__lista');
+
 const campoNome = document.getElementById('campoNome');
 const campoEmail = document.getElementById('campoEmail');
 const campoNumero = document.getElementById('campoNumero');
@@ -30,11 +32,8 @@ function dobro() {
     
     listaSolicitações.push(novaSolicitação);
     
-    console.log(listaSolicitações);
-    //console.log(valorNome);
-    //console.log(valorEmail);
-    //console.log(valorNumero * 2);
-};
+    renderizarLayout();
+}
 
 function metade() {
     const valorNome = campoNome.value;
@@ -48,11 +47,8 @@ function metade() {
     };
     
     listaSolicitações.push(novaSolicitação);
-    
-    console.log(listaSolicitações);
-    //console.log(valorNome);
-    //console.log(valorEmail);
-    //console.log(valorNumero / 2);
+
+    renderizarLayout();
 
 };
 
@@ -60,5 +56,39 @@ function metade() {
 botaoAdicionarDobro.addEventListener('click', dobro);
 botaoAdicionarMetade.addEventListener('click', metade);
 
+function renderizarLayout () {
+    listaResultadosContainer.innerHTML = '';
+    for(let i = 0; i < listaSolicitações.length; i++) {
+        criarLayout(listaSolicitações[i]);
+    };
+};
+
+function criarLayout(contato) {
+    const li = document.createElement('li');
+    const button = document.createElement('button');
+    const h2 = document.createElement('h2');
+    const p = document.createElement('p');
+    const span = document.createElement('span');
+
+    button.id = "removerPedido";
+
+    h2.innerText = contato.nome;
+    p.innerText = contato.email;
+    span.innerText = contato.numero;
+
+    li.appendChild(button);
+    li.appendChild(h2);
+    li.appendChild(p);
+    li.appendChild(span);
+
+    listaResultadosContainer.appendChild(li);
+}
+
+/* <li>
+    <button id="removerContato"></button>
+    <h2>Manu</h2>
+    <p>manu555@gmail.com</p>
+    <span>9999999999</span>
+</li> */ 
 
 

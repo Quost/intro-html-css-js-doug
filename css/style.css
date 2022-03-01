@@ -92,7 +92,7 @@ main section {
 };
 
 .secaoListaContatos{
-  background-color: hsl(228deg 70% 28% / 10%);
+  background-color: rgba(72, 88, 150, 0.1);
 };
 
 .secaoListaContatos__lista{
