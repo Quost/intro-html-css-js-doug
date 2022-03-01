@@ -91,10 +91,28 @@ main section {
   box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
 }
 
-.secaoListaRespostas {
-  background-color: aquamarine;
+.secaoListaContatos{
+  background-color: hsl(228deg 70% 28% / 10%);
 }
 
+.secaoListaContatos__lista{
+  width: 100%;
+  max-width: 450px;
+}
+.secaoListaContatos__lista li{
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.secaoListaContatos__lista li h2{
+  font-size: 18px;
+  font-weight: 600;
+}
+.secaoListaContatos__lista li p{
+  margin: 5px 0;
+}
+.secaoListaContatos__lista li span{}
 
 
 
