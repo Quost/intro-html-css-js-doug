@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https: //fonts.googleapis.com/css2? family= League+Spartan:wght@100;200;300;400;500;600;700;800;900 & family= Areia movediça:wght@300;400;700 & display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="texte/css" href="css/reset.css">
 
 </head>
 <body>
@@ -17,25 +22,30 @@
             <h4>Complete o cadastro e escolha se queres o dobro ou metade de um número.</h4>
         </div>
     </header>
-
     <main>
         <section class="secaoFormulario">
-                <input placeholder="Nome" />
-                <input placeholder="E-mail" />
-                <input placeholder="Número" />
-                <div>
-                    <button class="adicionar Dobro">Adicionar Dobro</button>
-                    <button class="adicionar Metade">Adicionar Metade</button>
-                </div>
-                </section>
-        <section class="secaoListaResultados">
-            <ul class="list"> 
-                <li>
-                    <p>Não há resultados na lista</p>
-                </li>  
-            </ul> 
+            <input placeholder="Nome">
+            <input placeholder="Email">
+            <input placeholder="Número">
+            <div>
+                <button class="adicionar dobro">Adicionar Dobro</button>
+                <button class="adicionar metade">Adicionar Metade</button>
+            </div>
         </section>
-    </main>         
+        <section class="secaoListaRespostas">
+            <ul class="secaoListaResposta__lista">
+                <li>
+                    <p>Não há contatos na sua lista</p>
+                </li>
+                <li>
+                    <button id="removerResposta"></button>
+                    <h2>Manu</h2>
+                    <p>manu@gmail.com</p>
+                    <span>9999999999</span>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body> 
 
 </html> 

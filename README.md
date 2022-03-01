@@ -20,4 +20,24 @@ In CSS
 
     padding: 10px 10px;
         espaçamento dentro do quadrado para o texto
+ <main>
+        <section class="secaoFormulario">
+                <input placeholder="Nome" />
+                <input placeholder="E-mail" />
+                <input placeholder="Número" />
+                <div>
+                    <button class="adicionar Dobro">Adicionar Dobro</button>
+                    <button class="adicionar Metade">Adicionar Metade</button>
+                </div>
+                </section>
+        <section class="secaoListaResultados">
+            <ul class="list"> 
+                <li>
+                    <p>Não há resultados na lista</p>
+                </li>  
+            </ul> 
+        </section>
+    </main>         
+
     -->
+
