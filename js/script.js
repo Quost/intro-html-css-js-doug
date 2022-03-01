@@ -10,16 +10,6 @@
 
 const listaSolicitações = [];
 
-const novaSolicitação = {
-    nome: "Douglas",
-    email: "douglaswerner@gmail.com",
-    numero: 25
-};
-
-listaSolicitações.push(novaSolicitação);
-
-console.log(listaSolicitações);
-
 const campoNome = document.getElementById('campoNome');
 const campoEmail = document.getElementById('campoEmail');
 const campoNumero = document.getElementById('campoNumero');
@@ -32,9 +22,18 @@ function dobro() {
     const valorEmail = campoEmail.value;
     const valorNumero = campoNumero.value;
 
-    console.log(valorNome);
-    console.log(valorEmail);
-    console.log(valorNumero * 2);
+    const novaSolicitação = {
+        nome: valorNome,
+        email: valorEmail,
+        numero: valorNumero * 2 + " Dobro"
+    };
+    
+    listaSolicitações.push(novaSolicitação);
+    
+    console.log(listaSolicitações);
+    //console.log(valorNome);
+    //console.log(valorEmail);
+    //console.log(valorNumero * 2);
 };
 
 function metade() {
@@ -42,12 +41,24 @@ function metade() {
     const valorEmail = campoEmail.value;
     const valorNumero = campoNumero.value;
 
-    console.log(valorNome);
-    console.log(valorEmail);
-    console.log(valorNumero / 2);
+    const novaSolicitação = {
+        nome: valorNome,
+        email: valorEmail,
+        numero: valorNumero / 2 + " Metade"
+    };
+    
+    listaSolicitações.push(novaSolicitação);
+    
+    console.log(listaSolicitações);
+    //console.log(valorNome);
+    //console.log(valorEmail);
+    //console.log(valorNumero / 2);
 
-}
+};
+
 
 botaoAdicionarDobro.addEventListener('click', dobro);
 botaoAdicionarMetade.addEventListener('click', metade);
+
+
 
