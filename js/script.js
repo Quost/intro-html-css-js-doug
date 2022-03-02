@@ -9,8 +9,9 @@
 */
 
 const listaSolicitações = [];
+let id = 0;
 
-const listaResultadosContainer = document.querySelector('.secaoListaContatos__lista');
+const listaResultadosContainer = document.querySelector('.listaSolicitacao_lista');
 
 const campoNome = document.getElementById('campoNome');
 const campoEmail = document.getElementById('campoEmail');
@@ -25,11 +26,13 @@ function dobro() {
     const valorNumero = campoNumero.value;
 
     const novaSolicitação = {
+        id: id,
         nome: valorNome,
         email: valorEmail,
         numero: valorNumero * 2 + " Dobro"
     };
     
+    id++;
     listaSolicitações.push(novaSolicitação);
     
     renderizarLayout();
@@ -41,11 +44,13 @@ function metade() {
     const valorNumero = campoNumero.value;
 
     const novaSolicitação = {
+        id: id,
         nome: valorNome,
         email: valorEmail,
         numero: valorNumero / 2 + " Metade"
     };
     
+    id++;
     listaSolicitações.push(novaSolicitação);
 
     renderizarLayout();
@@ -56,12 +61,35 @@ function metade() {
 botaoAdicionarDobro.addEventListener('click', dobro);
 botaoAdicionarMetade.addEventListener('click', metade);
 
+function removerSolicitacao(evento) {
+    const clickBotao = evento.target;
+    const clickRemove = clickBotao.parentElement;
+    const idClickRemove = clickRemove.dataset.id;
+
+    const removeClick = listaSolicitações.find((contato) => contato.id == idClickRemove);
+    const posicaoSolicitaçãoRemovida = listaSolicitações.indexOf(removeClick);
+    listaSolicitações.splice(posicaoSolicitaçãoRemovida, 1);
+
+    renderizarLayout();
+}
+
 function renderizarLayout () {
     listaResultadosContainer.innerHTML = '';
-    for(let i = 0; i < listaSolicitações.length; i++) {
+
+    if(listaSolicitações.length !== 0) {
+
+        for(let i = 0; i < listaSolicitações.length; i++) {
         criarLayout(listaSolicitações[i]);
-    };
+        }
+    } else {
+        const listaVazia = `<li>
+        <p>Não há solicitações na sua lista</p>
+        </li>`; 
+
+        listaResultadosContainer.innerHTML = listaVazia;
+    }
 };
+renderizarLayout();
 
 function criarLayout(contato) {
     const li = document.createElement('li');
@@ -71,7 +99,9 @@ function criarLayout(contato) {
     const span = document.createElement('span');
 
     button.id = "removerPedido";
+    button.addEventListener('click', removerSolicitacao)
 
+    li.dataset.id = contato.id; 
     h2.innerText = contato.nome;
     p.innerText = contato.email;
     span.innerText = contato.numero;
@@ -84,11 +114,8 @@ function criarLayout(contato) {
     listaResultadosContainer.appendChild(li);
 }
 
-/* <li>
-    <button id="removerContato"></button>
-    <h2>Manu</h2>
-    <p>manu555@gmail.com</p>
-    <span>9999999999</span>
-</li> */ 
+
+window.localStorage.setItem('usuario', 'Douglas Williams');
+var usuario = window.localStorage.getItem('usuario');
 
 

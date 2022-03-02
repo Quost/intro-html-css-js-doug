@@ -67,25 +67,25 @@ main section {
   text-transform: uppercase;
 }
 
-.secaoListaContatos {
+.listaSolicitacao {
   padding: 100px 20px;
   width: 100%;
   max-width: 1025px;
   background-color: rgb(47, 56, 184);
 }
 
-.secaoListaContatos__lista{
+.listaSolicitacao_lista{
   background-color: rgba(3, 31, 105, 0.1);
   width: 100%;
   max-width: 450px;
 }
-.secaoListaContatos__lista li{
+.listaSolicitacao_lista li{
   background-color: white;
   padding: 20px 30px;
   border-radius: 10px;
   margin-bottom: 30px;
 }
-.secaoListaContatos__lista li button{
+.listaSolicitacao_lista li button{
   float: right;
   background-image: url(../img/lixeira.png);
   width: 30px;
@@ -96,14 +96,14 @@ main section {
   border-radius: 100%;
   cursor: pointer;
 }
-.secaoListaContatos__lista li h2{
+.listaSolicitacao_lista li h2{
   font-size: 20px;
   font-weight: 600;
 }
-.secaoListaContatos__lista li p{
+.listaSolicitacao_lista li p{
   margin: 5px 0;
 }
-.secaoListaContatos__lista li span{
+.listaSolicitacao_lista li span{
 }
 
 #adicionar:hover, .adicionar:focus {
