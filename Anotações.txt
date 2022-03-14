@@ -13,7 +13,7 @@ Atividades Matheus
 
 a) Que imprima todos os números multiplos de 5, no intervalo fehado de 1 à 500:
 R= 
-	var i = 0
+	const i = 0
 	let multiplosDe5 = 0
 	let multiplicador = 5
 	for(i = 0; i < 500; i++){
